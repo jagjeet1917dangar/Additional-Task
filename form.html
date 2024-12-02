@@ -48,7 +48,7 @@
     </style>
 </head>
 <body>
-    <form action="index.html" method="POST">
+    <form id="userForm" action="index.html" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
@@ -60,5 +60,17 @@
 
         <button type="submit">Submit</button>
     </form>
+    <script>
+        document.getElementById('userForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const skill = document.getElementById('skill').value;
+            const userData = { name, email, skill };
+            localStorage.setItem('user', JSON.stringify(userData));
+            alert('Form data saved successfully!');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
