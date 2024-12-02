@@ -222,7 +222,7 @@
         height: 70px;
         width: 1360px;
         border-bottom: 1px solid grey;
-        margin-top: 200px;
+        margin-top: 100px;
     }
     .imagespart{
         display: grid;
@@ -255,7 +255,54 @@
         height: 130px;
         width: 5px;
     }
-
+    .buttons{
+        display: grid;
+        grid-template-columns: repeat(2,150px);
+        margin-top: 130px;
+        margin-left: 110px;
+    }
+    .b1{
+        text-align: center;
+        width: 120px;
+        border: 1px solid grey;
+        border-radius: 15px;
+        padding: 5px;
+        font-family: sans-serif;
+    }
+    .b2{
+        text-align: center;
+        border: 1px solid grey;
+        padding: 5px;
+        border-radius: 15px;
+        font-family: sans-serif;
+    }
+    .s{
+        font-family: sans-serif;
+        color: grey;
+        font-size: 13px;
+    }
+    .i{
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    .jeet{
+        display: grid;
+        grid-template-columns: repeat(3,400px);
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .yash{
+        display: grid;
+        grid-template-columns: repeat(3,400px);
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .imagessss1{
+        margin-top: -80px;
+    }
+    button{
+        width: 130px;
+    }
 </style>
 <body>
     <img style="margin-left: 33px;margin-top: 22px;height: 40px;" width="242px" src="logo.png" alt="">
@@ -264,7 +311,7 @@
         <h2 class="h2">Search projects, creators, and categories</h2>
     </div>
     <div class="searchbarnibajuma">
-        <div class="start"><h1 class="h1">Start a project</h1></div>
+        <div class="start"><button onclick="openLogininForm()"><h1 class="h1">Start a project</h1></button></div>
         <div class="login"><h1 class="l">Log in</h1></div>
     </div>
     <div class="searchbarniniche">
@@ -319,6 +366,10 @@
     <div class="aukaat2"><img style="border-radius: 25px;" width="40px" src="pic 11.png" alt=""></div>
     <div class="thak1"><img style="border-radius: 10px;" width="300px" src="pic 10.png" alt=""><h2 class="deep">Monkey peak...<br><h4 class="andar">Antarctic Press</h4></h2></div>
     <div class="abhi"><img style="border-radius: 25px;"  width="40px" src="pic 3.png" alt=""></div>
+    <div class="buttons">
+        <div class="b1">Tabletop Games</div>
+        <div class="b2">Tokyo, Japan</div>
+    </div>
     <div class="box"></div>
     </div>
     <div class="imagespart">
@@ -334,5 +385,21 @@
         <div class="nanananan"></div>
     </div>
     <div class="box" style="margin-top: 50px;"></div>
+    <div class="i"><h3 class="s">FRESH FAVORITES</h3></div>
+    <div class="jeet">
+        <div class="jis1"><img style="border-radius: 10px;" width="360px" src="pic 13.png" alt=""><h2 class="deep">Not Enough Mana:<br>Spellsmiths & Summoners ↯<h4 class="andar">Paweł Piskorski</h4></h2></div>
+        <div class="jis2"><img style="border-radius: 10px;" width="360px" src="pic 15.png" alt=""><h2 class="deep">Holly G's School Bites: Cutting Class!<br><h4 class="andar">Holly Golightly</h4></h2></div>
+        <div class="jis3"><img style="border-radius: 10px;" width="360px" src="pic 14.png" alt=""><h2 class="deep">Pixeldarts: The Retro-Inspired Electronic Throwing Game<br><h4 class="andar">Chessnut</h4></h2></div>
+    </div>
+    <div class="yash">
+        <div class="imagessss1"><img width="40px" src="pic 16.png" alt=""></div>
+        <div class="imagessss1"><img width="40px" style="border-radius: 20px;" src="pic 17.png" alt=""></div>
+        <div class="imagessss1"><img width="40px" style="border-radius: 20px;" src="pic 18.png" alt=""></div>
+    </div>
+    <script>
+        function openLogininForm(){
+            window.open('form.html','_blank');
+        };
+    </script>
 </body>
 </html>
